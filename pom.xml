@@ -55,7 +55,7 @@
         <springboot.version>2.3.10.RELEASE</springboot.version>
         <spring-cloud.version>Hoxton.SR10</spring-cloud.version>
 
-        <docker.image.prefix>vote</docker.image.prefix>
+        <docker.image.prefix>vote.test.ivan</docker.image.prefix>
     </properties>
 
     <!-- 依赖版本统一管理 -->
@@ -246,11 +246,6 @@
                         </path>
                     </annotationProcessorPaths>
                 </configuration>
-            </plugin>
-
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>

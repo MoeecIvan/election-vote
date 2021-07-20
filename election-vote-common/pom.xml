@@ -10,8 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>election-vote-common</artifactId>
-    <description>一些公共类和工具</description>
-    <packaging>jar</packaging>
+    <description>common tools</description>
 
     <dependencies>
         <dependency>

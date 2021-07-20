@@ -1,0 +1,32 @@
+eureka-server:
+  image: vote.test.ivan/eureka-server
+  ports:
+    - 9080:9080
+  hostname: eureka-server
+election-vote-member:
+  image: vote.test.ivan/election-vote-member
+  ports:
+    - 9100:9100
+  links:
+    - eureka-server
+  external_links:
+    - mysql-server
+    - redis-server
+election-vote:
+  image: vote.test.ivan/election-vote
+  ports:
+    - 9120:9120
+  links:
+    - eureka-server
+  external_links:
+    - mysql-server
+    - redis-server
+election-vote-admin:
+  image: vote.test.ivan/election-vote-admin
+  ports:
+    - 9110:9110
+  links:
+    - eureka-server
+  external_links:
+    - mysql-server
+    - redis-server

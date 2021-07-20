@@ -12,16 +12,16 @@
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.4.1.Final/mapstruct-processor-1.4.1.Final.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.4.1.Final/mapstruct-1.4.1.Final.jar" />
         </processorPath>
-        <module name="election-vote" />
         <module name="eureka-server" />
-        <module name="election-vote-dal" />
         <module name="election-vote-admin" />
         <module name="election-vote-service" />
+        <module name="election-vote-common" />
         <module name="election-vote-member-dal" />
         <module name="election-vote-admin-service" />
         <module name="election-vote-admin-dal" />
+        <module name="election-vote-dal" />
+        <module name="election-vote" />
         <module name="election-vote-member" />
-        <module name="election-vote-common" />
         <module name="election-vote-member-service" />
       </profile>
     </annotationProcessing>
