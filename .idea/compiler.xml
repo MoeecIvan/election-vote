@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Annotation profile for election-vote-demo" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.16/lombok-1.18.16.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.4.1.Final/mapstruct-processor-1.4.1.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.4.1.Final/mapstruct-1.4.1.Final.jar" />
+        </processorPath>
+        <module name="election-vote" />
+        <module name="eureka-server" />
+        <module name="election-vote-dal" />
+        <module name="election-vote-admin" />
+        <module name="election-vote-service" />
+        <module name="election-vote-member-dal" />
+        <module name="election-vote-admin-service" />
+        <module name="election-vote-admin-dal" />
+        <module name="election-vote-member" />
+        <module name="election-vote-common" />
+        <module name="election-vote-member-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="vote-admin-api" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="election-vote" options="-parameters" />
+      <module name="election-vote-admin" options="-parameters" />
+      <module name="election-vote-admin-dal" options="-parameters" />
+      <module name="election-vote-admin-service" options="-parameters" />
+      <module name="election-vote-common" options="-parameters" />
+      <module name="election-vote-dal" options="-parameters" />
+      <module name="election-vote-member" options="-parameters" />
+      <module name="election-vote-member-dal" options="-parameters" />
+      <module name="election-vote-member-service" options="-parameters" />
+      <module name="election-vote-service" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="vote-admin-api" options="-parameters" />
+    </option>
+  </component>
+</project>
